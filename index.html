@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherapp.css">
+    <!-- defer makes js load faster that way it can fire when the whole page loads -->
+    <!-- using jquery and moment js to help with the overall js -->
+    <!-- make sure to have jquery and moment before your script to call it properly-->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script defer src="logic.js"></script>
+</head>
+<header class="weather-header">Weather Dashboard</header>
+<body>
+    <div id="sidebar-container" class="sidebar">
+        <h2 class="search-title">Search For A City:</h2>
+        <input id="city-input" class="search-bar" placeholder="Write down your city!">
+        <!-- when button is clicked the function handleSearchBtn will take affect -->
+        <button id="searchBtn" class="search-btn" onclick="handleSearchBtn();">Search</button>
+        <div id="css-line" class="line"></div>
+    </div>
+    <div id="main-content-container" class="main-content hide">
+        <div id="main-weather-content" class="main-content-box">
+
+        </div>
+    </div>
+    <h2 id="day-header" class="week-forecast hide">5-Day Forecast:</h2>
+    <div id="weather-content" class="weather-content-box"></div>
+   <!-- create day divs in js -->
+    </div>
+    
+</body>
+</html>

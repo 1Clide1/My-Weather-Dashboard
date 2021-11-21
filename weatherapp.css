@@ -1,0 +1,132 @@
+/* colors for website */
+:root{
+    --headerColor: rgb(246, 254, 255);
+    --favColor: rgb(0,128,0);
+    --modColor: rgb(255,165,0);
+    --sevColor: rgb(255,0,0);
+    --lightblue:rgb(131, 181, 228);
+}
+
+/* gives the header some pop */
+.weather-header{
+background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,0.8715861344537815) 0%, rgba(63,117,215,1) 0%, rgba(103,171,215,1) 100%);
+text-align: center;
+font-size: 4rem;
+color: var(--headerColor);
+padding: 3rem
+}
+/* main content sizing */
+.main-content{
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex: auto;
+}
+/* style the main weather content */
+.main-content-box{
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid black;   
+}
+/* style the boxes */
+.day-box{
+    display: inline-block;
+    margin: 1rem;
+    background-color: rgba(63,117,215,1);
+    width: 14rem;
+    height: 20rem;
+}
+/* styling for the forecast */
+.week-forecast{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+/* forecast list style */
+.daily-ul{
+    list-style:none;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+/* style for current day weather list */
+.current-day-ul{
+    list-style:none;
+    color: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+/* styling for forecast header */
+.day-header{
+color: var(--headerColor);
+text-align: center;
+}
+/* color for forecast title */
+.week-forecast{
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+/* color for search title */
+.search-title{
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+/* color for current day weather heder */
+.current-day-header{
+    color: var(--lightblue);
+    text-align: center;
+    font-size: 2rem;
+}
+/* past search p tags style */
+.past-search{
+    color: var(--headerColor);
+    background-color: var(--lightblue);
+    border-radius: 3rem;
+}
+/* styling for uv color indicator */
+.uv-fav{
+    background-color: var(--favColor);
+    border-radius: 1rem;
+}
+.uv-mod{
+    background-color: var(--modColor);
+    border-radius: 1rem;
+}
+.uv-sev{
+    background-color: var(--sevColor);
+    border-radius: 1rem;
+}
+/* style to add a line */
+.line{
+    margin-bottom: .5rem;
+    padding: .4rem;
+    border-bottom: 2px solid grey;
+}
+/* style to create a sidebar for my sidebar div */
+.sidebar{
+    display: table-cell;
+}
+/* stlye for the search button */
+.search-btn{
+background-color: var(--lightblue);
+color: var(--headerColor);
+border-radius: 3rem;
+}
+/* style for the input */
+.search-bar{
+    border-radius: 3rem;
+}
+/* make sure to hide weather div and forecast divs at the start of the website */
+.hide{
+    display: none;
+}
